@@ -16,21 +16,30 @@
 
 .header__navbar-item {
     margin: 0 8px;
+    position: relative;
+    min-height: 26px;
 }
 
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
-    position: relative;
     font-size: 1.5rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
 }
 
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
 .header__navbar-item:hover,
+.header__navbar-icon:hover,
 .header__navbar-item-link:hover {
-    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
 }
 
@@ -48,6 +57,17 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+.header__navbar-icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+
+.header__navbar-title--no-pointer {
+    cursor: text;
+    color: var(--white-color);
+}
+
 
 .header__navbar-icon-link {
     color: var(--white-color);
