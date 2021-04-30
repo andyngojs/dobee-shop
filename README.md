@@ -51,3 +51,5 @@ san-serif : là 1 chủng những chữ không có chân.
 Sử dụng font của Font AweSome 6
 
 ### 6. Dựng Header QR Code 
+
+### 7. Base Modal 
