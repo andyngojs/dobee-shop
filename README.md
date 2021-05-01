@@ -14,7 +14,9 @@
 
 ### 2. Reset CSS
 
-Mục đích: để loại bỏ đi những css mặc định do các trình duyệt tự thêm vào (không phải trình duyệt nào css cũng giống nhau , nhiều trình duyệt có css khác )
+Mục đích: để loại bỏ đi những css mặc định do các trình duyệt tự thêm vào 
+
+(không phải trình duyệt nào css cũng giống nhau , nhiều trình duyệt có css khác )
 
 Có 2 cách để reset css:
 
