@@ -1,0 +1,32 @@
+/* Comon */
+.text-center {
+    text-align: center !important;
+}
+
+
+.auth-form__form {
+    display: inline-grid;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.valid .form-control {
+    border-color: #f33a58;
+}
+  
+.valid .form-message {
+    color: #f33a58;
+}
+
+.valid {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.form-message {
+    font-size: 11px;
+    padding: 4px 0 0;
+    line-height: 16px;
+    font-weight: normal;
+    text-align: left;
+}

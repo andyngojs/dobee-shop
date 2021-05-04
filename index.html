@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style-form.css">
     <title>Dobee Shop</title>
 </head>
 <body>
@@ -117,10 +118,12 @@
     
                         <div class="auth-form__form">
                             <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Email">
+                                <input type="text" class="auth-form__input form-control" id="email-login" placeholder="Email">
+                                <span class="form-message valid"></span>
                             </div>
                             <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Mật Khẩu">
+                                <input type="password" class="auth-form__input form-control" id="password-login" placeholder="Mật Khẩu">
+                                <span class="form-message valid"></span>
                             </div>
                         </div>
     
@@ -147,13 +150,16 @@
     
                         <div class="auth-form__form">
                             <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Email">
+                                <input type="text" class="auth-form__input form-control" id="email" placeholder="Email">
+                                <span class="form-message valid"></span>
                             </div>
                             <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Mật Khẩu">
+                                <input type="password" class="auth-form__input form-control" id="password" placeholder="Mật Khẩu">
+                                <span class="form-message valid"></span>
                             </div>
                             <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                                <input type="password" class="auth-form__input form-control" id="password_confirmation" placeholder="Nhập lại mật khẩu">
+                                <span class="form-message valid"></span>
                             </div>
                         </div>
     
@@ -189,5 +195,27 @@
         </div>
     </div>
     <script src="./assets/js/popup.js"></script>
+    <script src="./assets/js/validator.js"></script>
+    <script>
+        Validator({
+            form: '.auth-form__container',
+            formGroupSelector: '.auth-form__group',
+            errorSelector: '.form-message',
+            rules: [
+                //Rule Login
+                Validator.isRequired('#email-login'),
+                Validator.isEmail('#email-login'),
+                Validator.minLength('#password-login', 6),
+                //Rule Register
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 6),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isConfirmed('#password_confirmation', function () {
+                    return document.querySelector('.auth-form__container #password').value;
+                }, 'Mật khẩu nhập lại không chính xác !')
+            ],
+        });
+    </script>
 </body>
 </html>

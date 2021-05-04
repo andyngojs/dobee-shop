@@ -305,7 +305,7 @@
 }
 
 .auth-form__input:focus {
-    border-color: var(--primary-color);
+    border-color: #666;
 }
 
 .auth-form__aside {
