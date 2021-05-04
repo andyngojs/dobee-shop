@@ -55,3 +55,14 @@ Sử dụng font của Font AweSome 6
 ### 6. Dựng Header QR Code 
 
 ### 7. Base Modal 
+
+### 8. CSS Animation Modal
+
+### 9. Validate Form 
+
+Use library validate 
+
+Link library: https://github.com/andyngojs/validate-form-library
+
+How to use: open file `README.md`(https://github.com/andyngojs/validate-form-library/blob/master/README.md)
+
