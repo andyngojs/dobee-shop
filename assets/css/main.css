@@ -257,17 +257,27 @@
 
 /* Authen Modal */
 .auth-form {
+    background-color: var(--white-color);
+    border-radius: 5px;
     width: 500px;
+    overflow: hidden;
 }
 
 .auth-form__container {
     padding: 0 32px;
+    display: none;
+}
+
+.auth-form__container.active {
+    display: block;
 }
 
 .auth-form__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 12px;
 }
 
 .auth-form__heading {
@@ -328,9 +338,10 @@
 
 .auth-form__socials {
     background-color: #f5f5f5;
-    padding: 12px 36px;
+    padding: 14px 36px;
     display: flex;
     justify-content: space-between;
+    margin-top: 22px;
 }
 
 .auth-form__socials-icon {
@@ -345,4 +356,35 @@
 .auth-form__socials--facebook
 .auth-form__socials-icons {
     color: var(--white-color);
+}
+
+.auth-form__socials-title {
+    margin: 0 36px;
+}
+
+.auth-form__socials--google {
+    color: #666;
+    background-color: var(--white-color);
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__help-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393;
+}
+
+.auth-form__help-separate {
+    display: block;
+    height: 22px;
+    margin: -1px 16px 0;
+    border-left: 1px solid #eaeaea;
+}
+
+.auth-form__help-forgot {
+    color: var(--primary-color);
 }
