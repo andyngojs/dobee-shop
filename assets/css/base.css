@@ -58,8 +58,12 @@ html {
     right: 0;
     left: 0;
     bottom: 0;
-    display: flex;
+    display: none;
     animation: fadeIn linear 0.1s;
+}
+
+.show {
+    display: flex;
 }
 
 .modal__overlay {

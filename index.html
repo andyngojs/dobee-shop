@@ -188,29 +188,6 @@
                 </div>
         </div>
     </div>
-    <script>
-        const $ = document.querySelector.bind(document);
-        const $$ = document.querySelectorAll.bind(document);
-
-        const formContainer = $$('.auth-form__container');
-
-        const formActive = $('.auth-form__container.active');
-        const formLogin = $('.auth-form__login');
-        const formRegister = $('.auth-form__register');
-        
-        const btnReg = formLogin.querySelector('.auth-form__switch-btn');
-        btnReg.onclick = () => {
-            formActive.classList.remove('active');
-
-            formRegister.classList.add('active');
-        }
-
-        const btnLog = formRegister.querySelector('.auth-form__switch-btn');
-        btnLog.onclick = () => {
-            formRegister.classList.remove('active');
-
-            formLogin.classList.add('active');
-        }
-    </script>
+    <script src="./assets/js/popup.js"></script>
 </body>
 </html>
