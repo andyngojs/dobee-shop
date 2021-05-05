@@ -66,3 +66,6 @@ Link library: https://github.com/andyngojs/validate-form-library
 
 How to use: open file `README.md`(https://github.com/andyngojs/validate-form-library/blob/master/README.md)
 
+### 10. box-shadow 
+
+box-shadow: offsetX , offsetY , độ blur của bóng đổ , màu của bóng đổ
