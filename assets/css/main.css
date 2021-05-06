@@ -28,14 +28,14 @@
 }
 
 .header__navbar-user-avatar {
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header__navbar-user-name {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -79,8 +79,8 @@
     /* display: block; */
 }
 
-.header__navbar-user-item {
-    
+.header__navbar-user-item--separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header__navbar-user-item a {
@@ -113,7 +113,7 @@
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -162,6 +162,10 @@
 .header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+    margin-left: 4px;
 }
 
 .header__navbar-item--has-noti:hover .header__noti {
@@ -220,17 +224,18 @@
     top: 118%;
     right: 0;
     width: 404px;
+    border-radius: 2px;
     background-color: var(--white-color);
     border: 1px solid #d3d3d3;
     padding: 2px 0;
     cursor: default;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     -webkit-animation: headerNotifyGrowth ease-in 0.2s;
     -ms-animation: headerNotifyGrowth ease-in 0.2s;
     -moz-animation: headerNotifyGrowth ease-in 0.2s;
     will-change: opacity, transform;
-    z-index: 999;
+    z-index: 1;
 }
 
 .header__noti::before {
@@ -486,6 +491,11 @@
 
 .header__logo {
     width: 200px;
+}
+
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
 }
 
 .header__logo-img {
