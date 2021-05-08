@@ -105,3 +105,6 @@ Thêm animation vào element nào thì khai báo thuộc tính animation
 animation: [tên-animation-đã-viết-keyframe] | kiểu animation(ease-in, ease-out, ease-in-out, linear) | thời gian để 
 
 animation chuyển động (duration time s/ms) ;
+
+## Responsive
+ 
