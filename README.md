@@ -2,6 +2,8 @@
 
 ## THỰC HÀNH LẬP TRÌNH WEB VỚI HTML , CSS VÀ KỸ THUẬT RESPONSIVE
 
+### Facebook: http://fb.com/dn279
+
 ### 1. Dựng base source
 
 - base.css : css cho những thành phần dùng chung của trang web
@@ -69,3 +71,37 @@ How to use: open file `README.md`(https://github.com/andyngojs/validate-form-lib
 ### 10. box-shadow 
 
 box-shadow: offsetX , offsetY , độ blur của bóng đổ , màu của bóng đổ
+
+### 11 Transition
+
+ Là thuộc tính chuyển động khi có chuyển động thì sẽ tạo animation cho cái gì.
+
+VD: là định nghĩa ra những animation nếu mà đúng cái thằng transform này
+
+### 12 Animation 
+
+Tạo được animation cần phải có keyframe 
+
+khai báo keyframe: 
+
+@keyframe [tên-animation] {
+
+    from {
+
+        // để các thuộc tính lúc đầu bắt đầu chuyển động (start)
+
+    }
+
+    to {
+
+        // để các thuộc tính lúc kết thúc/dừng chuyển động (end)
+
+    }
+
+}
+
+Thêm animation vào element nào thì khai báo thuộc tính animation 
+
+animation: [tên-animation-đã-viết-keyframe] | kiểu animation(ease-in, ease-out, ease-in-out, linear) | thời gian để 
+
+animation chuyển động (duration time s/ms) ;
