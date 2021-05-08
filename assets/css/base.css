@@ -114,7 +114,7 @@ html {
     font-size: 1.4rem;
     padding: 12px;
     outline: none;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;
