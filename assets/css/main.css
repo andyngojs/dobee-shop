@@ -1204,3 +1204,8 @@ i.home-product-item__like-icon-fill {
     line-height: 1.3;
     font-weight: 600;
 }
+
+.home-product__pagination {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
