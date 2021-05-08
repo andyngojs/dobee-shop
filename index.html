@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -237,25 +237,35 @@
                     <div class="grid__column-10">
                         <div class="home-filter">
                             <span class="home-filter__label">Sắp xếp theo</span>
-                            <button class="btn">Phổ Biến</button>
-                            <button class="btn btn--primary">Mới Nhất</button>
-                            <button class="btn">Bán Chạy</button>
+                            <button class="home-filter__btn btn">Phổ Biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới Nhất</button>
+                            <button class="home-filter__btn btn">Bán Chạy</button>
 
                             <div class="select-input">
                                 <span class="select-input__label">Giá</span>
-                                <i class="fas fa-angle-down"></i>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Từ thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Từ cao đến thấp</a>
+                                    </li>
+                                </ul>
                             </div>
 
                             <div class="home-filter__page">
                                 <span class="home-filter__page-num">
-                                    <span class="home-filter__page-current">1</span>
-                                    /14
+                                    <span class="home-filter__page-current">1</span>/14
                                 </span>
 
                                 <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
                                     <a href="" class="home-filter__page-btn">
-                                        <i class="fas fa-angle-left"></i>
-                                        <i class="fas fa-angle-right"></i>
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
                                     </a>
                                 </div>
                             </div>
