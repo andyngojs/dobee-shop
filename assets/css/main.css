@@ -1,3 +1,7 @@
+.app {
+    overflow: hidden;
+}
+
 .header {
     height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
@@ -98,7 +102,7 @@
     border-top-right-radius: 2px;
 }
 
-.header__navbar-user-item a:last-child {
+.header__navbar-user-item a:child {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
@@ -494,6 +498,7 @@
 
 .header__mobile-search {
     padding: 0 12px;
+    display: none;
 }
 
 .header__mobile-search-icon {
@@ -541,6 +546,7 @@
     display: inline-block;
     padding: 0 12px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-icon {
@@ -1007,6 +1013,63 @@
     right: -4px;
 }
 
+/* Mobile Category */
+.mobile-category {
+    display: none;
+}
+
+.mobile-category__list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category__item {
+    flex-shrink: 0;
+    margin-right: 10px;
+
+}
+
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
+    background-color: #87afd8;
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
+    background-color: #76c9bd;
+}
+
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
+    background-color: #88cf81;
+}
+.mobile-category__link {
+    --line-height: 2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: var(--line-height);
+    height: calc(var(--line-height) * 2);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: center;
+    width: 110px;
+    display: block;
+    border-radius: 4px;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+
 /* Home sort + filter */
 .home-filter {
     background-color: rgba(0, 0, 0, 0.04);
@@ -1273,6 +1336,7 @@ i.home-product-item__like-icon-fill {
 .home-product__pagination {
     margin-top: 48px;
     margin-bottom: 32px;
+    padding-left: 0;
 }
 
 /* Footer */
