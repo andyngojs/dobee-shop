@@ -109,4 +109,7 @@
         font-size: 1.6rem;
         min-width: 36px;
     }
+    .header__logo-img {
+        width: 110px;
+    }
 }
