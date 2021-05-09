@@ -112,4 +112,7 @@
     .header__logo-img {
         width: 110px;
     }
+    .footer__content {
+        padding: 0 16px;
+    }
 }
