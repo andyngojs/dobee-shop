@@ -1,8 +1,7 @@
 # Website Demo - Dobee Shop
 
-## THỰC HÀNH LẬP TRÌNH WEB VỚI HTML , CSS VÀ KỸ THUẬT RESPONSIVE
+This is a exercise HTML, CSS in the course F8
 
-### Facebook: http://fb.com/dn279
 
 ### 1. Dựng base source
 
